@@ -21,12 +21,12 @@ RUN apt install -y --install-recommends winehq-staging winetricks zenity
 
 # Pre-install Mono, see versions at https://wiki.winehq.org/Mono
 RUN mkdir -p /usr/share/wine/mono/
-RUN curl http://dl.winehq.org/wine/wine-mono/5.1.1/wine-mono-5.1.1-x86.msi > /usr/share/wine/mono/wine-mono-5.1.1-x86.msi
+RUN curl http://dl.winehq.org/wine/wine-mono/6.2.0/wine-mono-6.2.0-x86.msi > /usr/share/wine/mono/wine-mono-6.2.0-x86.msi
 
 # Pre-install Gecko, see versions at https://wiki.winehq.org/Gecko
 RUN mkdir -p /usr/share/wine/gecko/
-RUN curl http://dl.winehq.org/wine/wine-gecko/2.47.1/wine-gecko-2.47.1-x86.msi > /usr/share/wine/gecko/wine-gecko-2.47.1-x86.msi
-RUN curl http://dl.winehq.org/wine/wine-gecko/2.47.1/wine-gecko-2.47.1-x86_64.msi > /usr/share/wine/gecko/wine-gecko-2.47.1-x86_64.msi
+RUN curl http://dl.winehq.org/wine/wine-gecko/2.47.2/wine-gecko-2.47.2-x86.msi > /usr/share/wine/gecko/wine-gecko-2.47.2-x86.msi
+RUN curl http://dl.winehq.org/wine/wine-gecko/2.47.2/wine-gecko-2.47.2-x86_64.msi > /usr/share/wine/gecko/wine-gecko-2.47.2-x86_64.msi
 RUN chmod 777 -R /usr/share/wine
 
 RUN curl 'https://eu.battle.net/download/getInstaller?os=win&installer=Battle.net-Setup.exe' > /tmp/Battle.net-Setup.exe
